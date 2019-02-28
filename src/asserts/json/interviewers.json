@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "firstName": "Иван",
+    "lastName": "Иващенко",
+    "specialization": "Провожу качественные технические интервью",
+    "pricePerHour": 1700,
+    "earned": "880т",
+    "rating": 91,
+    "location": "Санкт- Петербург",
+    "descriptionProfile": "Работаю техническим лидом бэкенд разработки на протяжении 3 лет. Веду подбор высококвалифицированных разработчиков. Помогу вам провести интервью и гарантирую обьективную оценку его способностей.",
+    "tags": [
+      "Java",
+      "Java 8",
+      "Hibernate",
+      "Spring boot",
+      "Spring 3",
+      "GIT"
+    ],
+    "tests": [
+      {
+        "name": "Senior java developer",
+        "score": "4.9"
+      },
+      {
+        "name": "Spring 3/4 базовый тест",
+        "score": "4.8"
+      },
+      {
+        "name": "GIT для профи",
+        "score": "4.5"
+      },
+      {
+        "name": "Java 8",
+        "score": "5.0"
+      },
+      {
+        "name": "Java 7",
+        "score": "4.0"
+      },
+      {
+        "name": "Коммуникативные навыки",
+        "score": "4.3"
+      }
+    ],
+    "workHistories": [
+      {
+        "name": "Junior java developer",
+        "rating": 4.5,
+        "time": "1 час",
+        "totalSum": "1000",
+        "price": "1000",
+        "status": "В работе"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.4,
+        "time": "1.5 часа",
+        "totalSum": "1500",
+        "price": "1000",
+        "status": "Завершено"
+      }
+    ],
+    "totalWorkTime": 40
+  },
+  {
+    "id": 2,
+    "firstName": "Константин",
+    "lastName": "Мироненко",
+    "specialization": "Провожу интервью с разработчиками Java",
+    "pricePerHour": 1500,
+    "earned": "990т",
+    "rating": 92,
+    "location": "Санкт- Петербург",
+    "descriptionProfile": "Имею большой опыт в проведении собеседованиии java разработчиков",
+    "tags": [
+      "Java",
+      "Java 8,9",
+      "Spring boot",
+      "Spring",
+      "GIT"
+    ],
+    "tests": [
+      {
+        "name": "Spring 3 базовый тест",
+        "score": "4.0"
+      },
+      {
+        "name": "GIT для профи",
+        "score": "3.9"
+      },
+      {
+        "name": "Java 8",
+        "score": "4.1"
+      },
+      {
+        "name": "Java 7",
+        "score": "4.2"
+      },
+      {
+        "name": "Коммуникативные навыки",
+        "score": "4.3"
+      }
+    ],
+    "workHistories": [
+      {
+        "name": "Junior java developer",
+        "rating": 4.7,
+        "time": "1 час",
+        "totalSum": "2000",
+        "price": "2000",
+        "status": "В работе"
+      },
+      {
+        "name": "Middle java developer",
+        "rating": 4.8,
+        "time": "2 часа",
+        "totalSum": "4000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.3,
+        "time": "1.5 часа",
+        "totalSum": "3000",
+        "price": "2000",
+        "status": "Завершено"
+      }
+    ],
+    "totalWorkTime": 15
+  },
+  {
+    "id": 3,
+    "firstName": "Алексей",
+    "lastName": "Паников",
+    "specialization": "Дам объективную оценку кандитату",
+    "pricePerHour": 1900,
+    "earned": "1.2 млн",
+    "rating": 97,
+    "location": "Санкт- Петербург",
+    "descriptionProfile": "",
+    "tags": [
+      "Java",
+      "Java 8",
+      "Java 9",
+      "Spring",
+      "Spring Sesurity",
+      "Maven",
+      "GIT"
+    ],
+    "tests": [
+      {
+        "name": "Spring 3 базовый тест",
+        "score": "4.8"
+      },
+      {
+        "name": "GIT для профи",
+        "score": "4.9"
+      },
+      {
+        "name": "Java 8",
+        "score": "4.7"
+      },
+      {
+        "name": "Java 7",
+        "score": "4.5"
+      },
+      {
+        "name": "Коммуникативные навыки",
+        "score": "4.4"
+      }
+    ],
+    "workHistories": [
+      {
+        "name": "Junior java developer",
+        "rating": 4.7,
+        "time": "1 час",
+        "totalSum": "2000",
+        "price": "2000",
+        "status": "В работе"
+      },
+      {
+        "name": "Middle java developer",
+        "rating": 5,
+        "time": "2 часа",
+        "totalSum": "4000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Middle java developer",
+        "rating": 4.9,
+        "time": "2 часа",
+        "totalSum": "4000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.3,
+        "time": "1.5 часа",
+        "totalSum": "3000",
+        "price": "2000",
+        "status": "Завершено"
+      }
+    ],
+    "totalWorkTime": 10
+  }
+]

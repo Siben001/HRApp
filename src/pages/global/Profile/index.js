@@ -6,34 +6,22 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
-import MainProfileInfo from "../pages/global/Profile/index/MainProfileInfo";
+import MainProfileInfo from "./index/MainProfileInfo";
+import {theme} from "../style";
+import FavoriteIcon from "@material-ui/icons/FavoriteBorder"
 
 function Transition(props) {
     return <Slide direction="left" {...props} />;
 }
 
-class Index extends React.Component {
-
-    state = {
-        open: false,
-    };
-
-    handleClickOpen = () => {
-        this.setState({open: true});
-    };
-
-    handleClose = () => {
-        this.setState({open: false});
-    };
+class Profile extends React.Component {
 
     render() {
+        const {open, onClose, info} = this.props;
+
         return (
-            <div>
-                <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
-                    Slide in alert dialog
-                </Button>
                 <Dialog
-                    open={this.state.open}
+                    open={open}
                     PaperProps={{
                         style: {
                             width: '1300px',
@@ -47,22 +35,38 @@ class Index extends React.Component {
                     TransitionComponent={Transition}
                     TransitionProps={{style: {justifyContent: 'flex-end'}}}
                     keepMounted
-                    onClose={this.handleClose}
+                    onClose={onClose}
                     aria-labelledby="alert-dialog-slide-title"
                     aria-describedby="alert-dialog-slide-description"
                 >
                     <DialogContent style={{backgroundColor: 'rgba(0,0,0,0.08)'}}>
                         <DialogContentText id="alert-dialog-slide-description">
-                            <MainProfileInfo/>
+                            <div style={{display: 'flex'}}>
+                                <div style={{flexBasis: '800px'}}>
+                            <MainProfileInfo info={info}/>
+                                </div>
+                                <div style={{flexBasis: '220px', display: 'flex', flexDirection: 'column', marginLeft: '24px'}}>
+                                    <Button style={{
+                                        backgroundColor: theme.colors.primary,
+                                        color: "#fff",
+                                        marginBottom: '12px',
+                                    }}
+                                    >
+                                        Написать
+                                    </Button>
+                                    <Button variant={"outlined"}><FavoriteIcon style={{marginRight: '8px'}}/>Сохранить</Button>
+                                </div>
+                                <div style={{flexGrow: '1'}}/>
+                            </div>
                         </DialogContentText>
                     </DialogContent>
                 </Dialog>
-            </div>
+
         );
     }
 }
 
-export default Index;
+export default Profile;
 
 
 //getListHRs
