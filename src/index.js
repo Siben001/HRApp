@@ -10,12 +10,12 @@ import thunk from "redux-thunk";
 import {composeWithDevTools} from "redux-devtools-extension";
 
 const store = createStore(
-    mainReducer,
-    composeWithDevTools(applyMiddleware(thunk)));
+  mainReducer,
+  composeWithDevTools(applyMiddleware(thunk)));
 
-ReactDOM.render(
-    <Provider store={store}>
-        <App/>
-    </Provider>, document.getElementById('root'));
+ReactDOM.render((
+  <Provider store={store}>
+    <App/>
+  </Provider>), document.getElementById('root'));
 
 serviceWorker.unregister();

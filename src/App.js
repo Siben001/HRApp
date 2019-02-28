@@ -1,31 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import FreelancerCard from "./components/FreelancerCard";
-import Profile from "./components/Profile";
+import React, {Component} from 'react';
+import {BrowserRouter} from "react-router-dom";
+import {Route, Switch} from "react-router";
+import MainPage from "./pages/MainPage";
 
 class App extends Component {
-  render() {
+  state = {
+    Error: null
+  };
 
-    return (
-      <div className="App">
-        {/*<header className="App-header">*/}
-          {/*<img src={logo} className="App-logo" alt="logo" />*/}
-          {/*<p>*/}
-            {/*Edit <code>src/App.js</code> and save to reload.*/}
-          {/*</p>*/}
-          {/*<a*/}
-            {/*className="App-link"*/}
-            {/*href="https://reactjs.org"*/}
-            {/*target="_blank"*/}
-            {/*rel="noopener noreferrer"*/}
-          {/*>*/}
-            {/*Learn React*/}
-          {/*</a>*/}
-        {/*</header>*/}
-        <FreelancerCard/>
-        {/*<Profile />*/}
+  componentDidCatch(error, errorInfo) {
+    this.setState({
+      Error: () => <div>
+        <div>error: {JSON.stringify(error)}</div>
+        <div>errorInfo: {JSON.stringify(errorInfo)}</div>
       </div>
+    })
+  }
+
+  render() {
+    let Error = this.state.Error;
+    return this.state.Error != null ? <Error/> : (
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={MainPage}/>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
