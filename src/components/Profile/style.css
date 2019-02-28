@@ -1,0 +1,13 @@
+.more {
+    color: #fa324f;
+    /*color: #008489;*/
+    font-weight: bold;
+}
+
+.more:hover {
+    text-decoration: underline;
+}
+
+.paper {
+    padding: 24px;
+}
