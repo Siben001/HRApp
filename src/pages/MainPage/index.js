@@ -14,7 +14,8 @@ class MainPage extends React.Component{
 
     return (
       <div>
-        <AppBar elevation={0} position={"sticky"} color={"default"}>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+        <AppBar elevation={0} position={"sticky"} color={"#fff"} style={{width: 1200}}>
           <Toolbar style={{
             display: 'flex',
             justifyContent: 'center'
@@ -46,6 +47,7 @@ class MainPage extends React.Component{
             <Button variant={"text"}>Войти</Button>
           </Toolbar>
         </AppBar>
+        </div>
         <div style={{
           height: 350,
           width: '100%',

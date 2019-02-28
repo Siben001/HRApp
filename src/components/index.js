@@ -6,13 +6,13 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
-import MainProfileInfo from "./Profile/MainProfileInfo";
+import MainProfileInfo from "../pages/global/Profile/index/MainProfileInfo";
 
 function Transition(props) {
     return <Slide direction="left" {...props} />;
 }
 
-class Profile extends React.Component {
+class Index extends React.Component {
 
     state = {
         open: false,
@@ -62,4 +62,7 @@ class Profile extends React.Component {
     }
 }
 
-export default Profile;
+export default Index;
+
+
+//getListHRs

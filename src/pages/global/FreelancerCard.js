@@ -5,6 +5,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Chip from "@material-ui/core/Chip";
+import {theme} from "../global/style";
 
 
 const styles = () => ({
@@ -34,7 +35,9 @@ class FreelancerCard extends React.Component {
 
 
     render() {
-        const {classes} = this.props;
+        const {classes, info} = this.props;
+        const {name, lastname} = info;
+        console.log(theme.colors.primary)
 
         const text = "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla."
         const skills = ["Python", "Java", "React.js", "Javascript"]
@@ -49,8 +52,12 @@ class FreelancerCard extends React.Component {
                 <div key="info" style={{flexBasis: '83%', marginLeft: 24}}>
                     <div key="main-bar" style={{display: 'flex', marginBottom: '8px'}}>
                         <div key="main-info" style={{textAlign: 'left', flexGrow: 1}}>
-                            <Typography className={classes.topText} color="primary">Name AnotherName F.</Typography>
-                            <Typography className={classes.topText}>Job name atatata</Typography>
+                            <Typography className={classes.topText} style={{color: theme.colors.primary}}>
+                                Name AnotherName F.
+                            </Typography>
+                            <Typography className={classes.topText}>
+                                Job name
+                            </Typography>
                         </div>
                         <div key="buttons">
                             <Button className={classes.button} variant={"outlined"}>View profile</Button>
@@ -75,7 +82,7 @@ class FreelancerCard extends React.Component {
                                         style={{marginLeft: ind === 0? 0: 8}}/>
                                 : ind === 3
                                 ?
-                                <Chip label={(skills.length-3) +" more"} color={"primary"}/>
+                                <Chip label={(skills.length-3) +" more"} color={theme.colors.primary}/>
                                 :null
                                   )}
                     </div>
