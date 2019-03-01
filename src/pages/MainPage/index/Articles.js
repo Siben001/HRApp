@@ -60,7 +60,7 @@ class Articles extends Component {
     return (
       <div className={classes.container}>
         <div className={classes.text}>
-          <Typography variant={"h3"}>Интересно знать</Typography>
+          <Typography style={{color: '#494949', fontWeight: 'bold'}} variant={"h3"}>Интересно знать</Typography>
         </div>
         <div className={classes.cardsContainer}>
           <div className={classes.cards}>

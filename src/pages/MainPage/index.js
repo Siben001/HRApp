@@ -15,6 +15,7 @@ import WhoAmI from "./index/WhoAmI";
 import CallBack from "./index/CallBack";
 import Articles from "./index/Articles";
 import About from "./index/About";
+import Some from '../../asserts/1.png';
 
 const styles = () => ({
   root: {
@@ -84,19 +85,20 @@ class MainPage extends React.Component {
               alignItems: 'center',
             }}>
               <div style={{
-                marginRight: 60
+                marginRight: 120
               }}>
                 <Typography variant={"h3"} style={{
                   width: 400,
                   alignText: 'left',
-                  marginBottom: 50
-                }}><b>Работа найдется для каждого</b></Typography>
+                  color: '#494949',
+                  marginBottom: 50,
+                }}><b>Мы работаем пока вы спите</b></Typography>
                 <Button style={{
-                  width: 250,
+                  width: 220,
                   marginRight: 10
                 }} variant={"outlined"}>Разместить вакансию</Button>
                 <Button style={{
-                  width: 250,
+                  width: 220,
                   marginLeft: 10
                 }} variant={"outlined"}>Разместить резюме</Button>
               </div>
@@ -104,7 +106,10 @@ class MainPage extends React.Component {
             </div>
             <GrayStrip/>
             <Spheres/>
-            <HowItWorks/>
+            <img src={Some} alt={'1'} style={{
+              objectFit: 'contain',
+            }}/>
+            {/*<HowItWorks/>*/}
             <WhoAmI/>
             <CallBack/>
             <Articles/>
