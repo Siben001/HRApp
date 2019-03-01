@@ -16,8 +16,8 @@ class Rating extends React.Component {
         const {rating} = this.props;
 
         return (
-            <div style={{width: '150px', maxWidth: '150px', minWidth: '150px', height: '4px', backgroundColor: theme.colors.background}}>
-                <div style={{width: rating * 1.5, height: '4px', backgroundColor: theme.colors.secondary}}/>
+            <div style={{width: '170px', maxWidth: '170px', minWidth: '170px', height: '4px', backgroundColor: "#E0E0E0"}}>
+                <div style={{width: rating * 1.7, height: '4px', backgroundColor: theme.colors.secondary}}/>
             </div>
 
         );

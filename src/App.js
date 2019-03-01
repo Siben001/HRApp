@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import {BrowserRouter} from "react-router-dom";
 import {Route, Switch} from "react-router";
 import MainPage from "./pages/MainPage";
+import Offer from "./pages/Offer";
 import HiringList from "./modules/HiringList/container";
+
 
 class App extends Component {
   state = {
@@ -24,6 +26,7 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route exact path='/hr' component={HiringList}/>
+          <Route exact path='/offer' component={Offer}/>
           <Route exact path='/' component={MainPage}/>
       </Switch>
       </BrowserRouter>

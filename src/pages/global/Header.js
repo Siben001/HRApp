@@ -8,6 +8,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Logo from "../../asserts/logo_toolbar.png";
 import SearchIcon from "@material-ui/icons/Search";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+import Badge from "@material-ui/core/Badge";
 
 
 const styles = () => ({
@@ -35,6 +36,8 @@ const styles = () => ({
 class Header extends React.Component {
 
     render() {
+        const {isNoti, onClickNoti} = this.props;
+
         return (
                 <AppBar position={"sticky"} color={"#fff"} style={{display: 'flex', alignItems: 'center'}}>
                         <Toolbar style={{
@@ -66,7 +69,14 @@ class Header extends React.Component {
                             <div>
                                 <Button variant={"text"}>Как это работает</Button>
                                 <Button variant={"text"}>Поддержка</Button>
-                                <IconButton><NotificationsIcon/></IconButton>
+                                <IconButton onClick={onClickNoti}>
+                                    <Badge
+                                    color="secondary"
+                                    badgeContent={1}
+                                    invisible={!isNoti}
+                                    style={{marin: "8px"}}
+                                ><NotificationsIcon/></Badge>
+                                </IconButton>
                                 <IconButton><AccountCircle/></IconButton>
                             </div>
                         </Toolbar>

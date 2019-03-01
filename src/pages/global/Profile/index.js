@@ -9,6 +9,10 @@ import Slide from '@material-ui/core/Slide';
 import MainProfileInfo from "./index/MainProfileInfo";
 import {theme} from "../style";
 import FavoriteIcon from "@material-ui/icons/FavoriteBorder"
+import SideInfo from "./index/SideInfo";
+import WorkHistory from "./index/WorkHistory";
+import SkillsBlock from "./index/SkillsBlock";
+import Tests from "./index/Tests";
 
 function Transition(props) {
     return <Slide direction="left" {...props} />;
@@ -44,18 +48,11 @@ class Profile extends React.Component {
                             <div style={{display: 'flex'}}>
                                 <div style={{flexBasis: '800px'}}>
                             <MainProfileInfo info={info}/>
+                            <WorkHistory history={info.workHistories}/>
+                            <SkillsBlock skills={info.tags}/>
+                            <Tests tests={info.tests}/>
                                 </div>
-                                <div style={{flexBasis: '220px', display: 'flex', flexDirection: 'column', marginLeft: '24px'}}>
-                                    <Button style={{
-                                        backgroundColor: theme.colors.primary,
-                                        color: "#fff",
-                                        marginBottom: '12px',
-                                    }}
-                                    >
-                                        Написать
-                                    </Button>
-                                    <Button variant={"outlined"}><FavoriteIcon style={{marginRight: '8px'}}/>Сохранить</Button>
-                                </div>
+       <SideInfo />
                                 <div style={{flexGrow: '1'}}/>
                             </div>
                         </DialogContentText>
