@@ -63,7 +63,7 @@ class WhoAmI extends Component {
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
                 <div>
-                  <Link to={'/'}>
+                  <Link to={'/new_deal'}>
                     <img className={classes.image} src={Company} alt={'company'}/>
                   </Link>
                 </div>
