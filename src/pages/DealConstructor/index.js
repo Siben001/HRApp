@@ -114,7 +114,7 @@ class DealConstructor extends Component {
               <CardHeader avatar={<Avatar>3</Avatar>}
                           title={<Typography variant={"subheading"}>Мне требуется</Typography>}/>
               <CardContent className={classes.cardContent}>
-                <FormControlLabel className={classes.item} control={<Checkbox/>} label={<Typography variant={'subheading'}>Специальст HR</Typography>}/>
+                <FormControlLabel className={classes.item} control={<Checkbox/>} label={<Typography variant={'subheading'}>Специалист HR</Typography>}/>
                 <FormControlLabel className={classes.item} control={<Checkbox/>} label={<Typography variant={'subheading'}>Интервьюер</Typography>}/>
               </CardContent>
               <CardActions style={{justifyContent: 'flex-end'}}>

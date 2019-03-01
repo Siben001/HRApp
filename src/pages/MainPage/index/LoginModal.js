@@ -17,8 +17,8 @@ class LoginModal extends Component {
             marginRight: '1%',
             marginLeft: '6%',
           }}>
-            <Button>Войти с помощью</Button>
-            <Button>Регистрация</Button>
+            <Button size={"small"} style={{marginRight: 10}}>Войти с помощью</Button>
+            <Button size={"small"}>Регистрация</Button>
           </div>
         } style={{
           paddingBottom: 0
@@ -65,7 +65,7 @@ class LoginModal extends Component {
                               label={'Запомнить'}/>
             <a style={{color: '#dedede'}} href={'/'}>Получить пароль</a>
           </div>
-            <Button style={{marginLeft: 150, width: 130, backgroundColor: '#fa324f'}}>Войти</Button>
+            <Button style={{marginLeft: 150, color: '#ffffff', width: 130, backgroundColor: '#fa324f'}}>Войти</Button>
         </CardContent>
       </Card>
     );

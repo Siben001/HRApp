@@ -1,6 +1,6 @@
 import Logo from "../../asserts/logo.png";
 import SearchIcon from "@material-ui/icons/Search";
-import Header from "../../asserts/header_img.png";
+import Header from "../../asserts/image_header.png";
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -96,11 +96,11 @@ class MainPage extends React.Component {
                 <Button style={{
                   width: 220,
                   marginRight: 10
-                }} variant={"outlined"}>Разместить вакансию</Button>
+                }} variant={"contained"} color={"secondary"}>Разместить вакансию</Button>
                 <Button style={{
                   width: 220,
                   marginLeft: 10
-                }} variant={"outlined"}>Разместить резюме</Button>
+                }} variant={"contained"} color={"default"}>Разместить резюме</Button>
               </div>
               <LoginModal/>
             </div>
