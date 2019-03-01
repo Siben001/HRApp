@@ -73,7 +73,7 @@ class HiringList extends React.Component {
         const {time, timerId} = this.state;
         if(time<3) this.setState({time: time+1});
         else {
-            this.setState({isNoti: true});
+            this.setState({isNoti: true, showNoti: true});
             clearTimeout(timerId)}
     };
 

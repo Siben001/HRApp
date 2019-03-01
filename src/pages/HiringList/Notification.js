@@ -13,7 +13,7 @@ class Notification extends React.Component {
 
         return (
             <div style={{
-                zIndex: 2202,
+                zIndex: 1202,
                 position: 'fixed',
                 top: '70px',
                 right: 'calc((100% - 1200px)/2 + 48px',
@@ -21,15 +21,15 @@ class Notification extends React.Component {
                     "0px 2px 2px 0px rgba(0,0,0,0.14), " +
                     "0px 3px 1px -2px rgba(0,0,0,0.12)",
                 maxWidth: '300px',
-                transition: 'ease 700ms'
+                transition: 'ease 700ms',
             }}>
                 {!showNoti ? null :
-                    <div>
+                    <div style={{backgroundColor: "#fff"}}>
                         <div style={{backgroundColor: theme.colors.background, padding: '8px 24px'}}>
                             <Typography variant={"h6"}>Уведомления</Typography>
                         </div>
                         <Divider/>
-                        <div style={{padding: '8px 24px'}}>
+                        <div style={{padding: '8px 24px', backgroundColor: "#fff"}}>
                             <div style={{display: 'flex'}}>
                                 <div style={{flexGrow: '1', marginRight: 8}}>
                                     <Avatar style={{height: '24px', width: '24px'}}>

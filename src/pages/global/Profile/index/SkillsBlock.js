@@ -26,6 +26,7 @@ class SkillsBlock extends React.Component {
                 <div style={{padding: "24px"}}>
                     {skills.map((skill, ind) =>
                         <Chip label={skill}
+                              variant={"outlined"}
                               key={ind + "skill"}
                               style={{margin: 8}}/>)
                     }
