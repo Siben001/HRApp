@@ -10,6 +10,7 @@ import {
 } from "@material-ui/core";
 import Header from "../global/Header";
 import Card from "@material-ui/core/Card";
+import {Link} from "react-router-dom"
 
 const styles = () => ({
   pageContainer: {
@@ -133,7 +134,7 @@ class DealConstructor extends Component {
               </CardContent>
               <CardActions style={{justifyContent: 'flex-end'}}>
                 <Button className={classes.buttons} onClick={() => this.setState({step: 75})}>Назад</Button>
-                <Button className={classes.buttons} >Сохранить</Button>
+                <Button className={classes.buttons} component={Link} to={"/hr"}>Сохранить</Button>
               </CardActions>
             </Card>
           </div>
