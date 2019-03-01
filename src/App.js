@@ -4,6 +4,7 @@ import {Route, Switch} from "react-router";
 import MainPage from "./pages/MainPage";
 import Offer from "./pages/Offer";
 import HiringList from "./modules/HiringList/container";
+import DealConstructor from "./modules/DealConstructor/container";
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
     return this.state.Error != null ? <Error/> : (
       <BrowserRouter>
         <Switch>
+          <Route exact path='/new_deal' component={DealConstructor}/>
           <Route exact path='/hr' component={HiringList}/>
           <Route exact path='/offer' component={Offer}/>
           <Route exact path='/' component={MainPage}/>

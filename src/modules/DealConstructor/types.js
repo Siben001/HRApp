@@ -1,0 +1,3 @@
+export default {
+  DEAL_PARAMS_ADDED: 'DEAL_PARAMS_ADDED'
+}
