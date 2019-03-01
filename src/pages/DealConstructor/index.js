@@ -35,11 +35,11 @@ const styles = () => ({
     margin: '0 30px'
   },
   input: {
-    border: '2px solid grey',
+    border: '1px solid #ececec',
     margin: '10px 0',
     borderRadius: 3,
     flexBasis: '100%',
-  }
+  },
 });
 
 class DealConstructor extends Component {
@@ -134,7 +134,7 @@ class DealConstructor extends Component {
               </CardContent>
               <CardActions style={{justifyContent: 'flex-end'}}>
                 <Button className={classes.buttons} onClick={() => this.setState({step: 75})}>Назад</Button>
-                <Button className={classes.buttons} component={Link} to={"/hr"}>Сохранить</Button>
+                <Button className={classes.buttons} component={Link} color={"primary"} to={"/hr"}>Сохранить</Button>
               </CardActions>
             </Card>
           </div>
