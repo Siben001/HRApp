@@ -95,7 +95,7 @@ class Spheres extends React.Component {
     const {classes} = this.props;
     return (
       <div className={classes.container}>
-          <Typography className={classes.header} variant={"h4"}>Сферы деятельности</Typography>
+          <Typography className={classes.header} variant={"h3"}>Сферы деятельности</Typography>
         <div className={classes.cardsContainer}>
           <div style={{
             display: 'flex',
@@ -112,7 +112,7 @@ class Spheres extends React.Component {
                       <img src={item.img} alt={item.desc}/>
                     </div>
                     <div style={{marginLeft: 60, marginTop: 30, flexBasis: '100%', alignText: 'left', width: 150}}>
-                      <Typography variant={"subheading"}>{item.desc}</Typography>
+                      <Typography variant={"subheading"} style={{fontWeight: 'bold', color: '#494949'}}>{item.desc}</Typography>
                     </div>
                   </CardContent>
                 </Card>

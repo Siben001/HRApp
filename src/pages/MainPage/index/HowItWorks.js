@@ -45,7 +45,7 @@ class HowItWorks extends Component {
           marginTop: 40,
           marginBottom: 40
         }}>
-          <Typography color={"inherit"} variant={"h3"}>Как это работает</Typography>
+          <Typography style={{color: '#494949', fontWeight: 'bold'}} color={"inherit"} variant={"h3"}>Как это работает</Typography>
         </div>
         <div style={{
           flexBasis: '100%',

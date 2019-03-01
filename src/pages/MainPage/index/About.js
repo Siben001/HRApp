@@ -37,7 +37,7 @@ class About extends Component {
         <div className={classes.cardsContainer}>
           <div className={classes.cards}>
             <div className={classes.card}>
-              <Typography color={"inherit"}  color="inherit"variant={"h5"}>Работодателям</Typography>
+              <Typography color={"inherit"} variant={"h5"}>Работодателям</Typography>
               <Typography color={"inherit"}>Прайс-лист</Typography>
               <Typography color={"inherit"}>Производственный календарь</Typography>
               <Typography color={"inherit"}>HR-Digital</Typography>

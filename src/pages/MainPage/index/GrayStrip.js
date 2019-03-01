@@ -15,6 +15,7 @@ const styles = () => ({
   },
   itemContainer: {
     display: 'flex',
+    margin: '0 20px',
     justifyContent: 'center'
   },
   image: {
