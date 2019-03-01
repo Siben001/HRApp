@@ -59,6 +59,54 @@
         "totalSum": "1500",
         "price": "1000",
         "status": "Завершено"
+      },
+      {
+        "name": "Junior java developer",
+        "rating": 4.7,
+        "time": "1 час",
+        "totalSum": "2000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Middle java developer",
+        "rating": 5,
+        "time": "2 часа",
+        "totalSum": "4000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.3,
+        "time": "1.5 часа",
+        "totalSum": "3000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Middle java developer",
+        "rating": 4.9,
+        "time": "2 часа",
+        "totalSum": "4000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.3,
+        "time": "1.5 часа",
+        "totalSum": "3000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Junior java developer",
+        "rating": 4.2,
+        "time": "1 час",
+        "totalSum": "2000",
+        "price": "2000",
+        "status": "В работе"
       }
     ],
     "totalWorkTime": 40
@@ -100,6 +148,10 @@
       {
         "name": "Коммуникативные навыки",
         "score": "4.3"
+      },
+      {
+        "name": "Английский для проведений интервью",
+        "score": "4.3"
       }
     ],
     "workHistories": [
@@ -110,6 +162,30 @@
         "totalSum": "2000",
         "price": "2000",
         "status": "В работе"
+      },
+      {
+        "name": "Middle java developer",
+        "rating": 4,
+        "time": "2 часа",
+        "totalSum": "4000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.3,
+        "time": "1.5 часа",
+        "totalSum": "3000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Middle java developer",
+        "rating": 4.1,
+        "time": "2 часа",
+        "totalSum": "4000",
+        "price": "2000",
+        "status": "Завершено"
       },
       {
         "name": "Middle java developer",
@@ -181,11 +257,27 @@
         "status": "В работе"
       },
       {
+        "name": "Senior java developer",
+        "rating": 4.3,
+        "time": "1.5 часа",
+        "totalSum": "3000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
         "name": "Middle java developer",
         "rating": 5,
         "time": "2 часа",
         "totalSum": "4000",
         "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.4,
+        "time": "1.5 часа",
+        "totalSum": "1500",
+        "price": "1000",
         "status": "Завершено"
       },
       {
@@ -195,6 +287,38 @@
         "totalSum": "4000",
         "price": "2000",
         "status": "Завершено"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.3,
+        "time": "1.5 часа",
+        "totalSum": "3000",
+        "price": "2000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Junior java developer",
+        "rating": 4.7,
+        "time": "1 час",
+        "totalSum": "2000",
+        "price": "2000",
+        "status": "В работе"
+      },
+      {
+        "name": "Senior java developer",
+        "rating": 4.4,
+        "time": "1.5 часа",
+        "totalSum": "1500",
+        "price": "1000",
+        "status": "Завершено"
+      },
+      {
+        "name": "Junior java developer",
+        "rating": 4.7,
+        "time": "1 час",
+        "totalSum": "2000",
+        "price": "2000",
+        "status": "В работе"
       },
       {
         "name": "Senior java developer",
