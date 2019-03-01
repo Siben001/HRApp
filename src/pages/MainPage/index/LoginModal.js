@@ -65,7 +65,7 @@ class LoginModal extends Component {
                               label={'Запомнить'}/>
             <a style={{color: '#dedede'}} href={'/'}>Получить пароль</a>
           </div>
-          <Button>Войти</Button>
+            <Button style={{marginLeft: 150, width: 130, backgroundColor: '#fa324f'}}>Войти</Button>
         </CardContent>
       </Card>
     );
